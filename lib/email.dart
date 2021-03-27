@@ -2,8 +2,8 @@ import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';
 
 class Email {
-  String _username = "alexsandervieirajunior@gmail.com";
-  String _password = "Alex1234";
+  String _username = "lucianofigueiredoc@gmail.com";
+  String _password = "lu010101";
   var smtpServer;
 
   Email(){
@@ -16,7 +16,7 @@ class Email {
     //Configurar a mensagem
     final message = Message()
       ..from = Address(_username, remetente)
-      ..recipients.add("alexsandervieirajunior@hotmail.com")
+      ..recipients.add("contato@igrejacristareformada.org.br")
       ..subject = "Mensagem enviada pelo APP por: $remetente"
       ..text = "$mensagem, Telefone para contato: $phone";
 
